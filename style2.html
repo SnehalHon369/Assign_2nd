@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <title>this is used to link page</title>
+    <style>
+        a:link,a:visited
+        {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            border: 2px solid gray;
+            display: inline-block;
+        }
+        table,tr,td{
+       
+        border: 1px  tomato;
+        border-style: dotted;
+        border-collapse: collapse;
+        }
+        tr:nth-child(even){
+            background-color: blanchedalmond;
+        }
+body{
+    background-image: url('bgimg.jpg');
+    background-repeat: no-repeat;
+    background:cover;
+    background-attachment: fixed;
+}
+
+    </style>
+    <script>
+        function myfunc(){
+           document.getElementById('id1').innerHTML="hello";
+        }
+    </script>
+
+</head>
+<body>
+
+    
+    <br>
+    <a href="mailto:honsnehal7@gmail.com" target="_blank">Mail from here</a>
+    <h1>Quotes by Famous People</h1>
+    <pre>
+        The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela
+        The way to get started is to quit talking and begin doing. -Walt Disney
+        Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs
+        If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt
+        If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey
+        If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron
+        Life is what happens when you're busy making other plans. -John Lennon</pre>
+
+<table>
+    <tr>
+        <th style="width:70% ">animal</th>
+        <th>bird</th>
+        <th>reptile</th>
+    </tr>
+    <tr style="height:100px">
+        <td>dog</td>
+        <td>peacock</td>
+        <td>snake</td>
+    </tr>
+    <tr>
+        <td>cat</td>
+        <td>crow</td>
+        <td>crocodile</td>
+    </tr>
+</table>
+
+<table>
+    <caption>people and adresses</caption>
+    <tr>
+        <th>firstname</th>
+        <td>snehal</td>
+        <td>praj</td>
+        <td>prash</td>
+    </tr>
+    <tr>
+        <th>adress</th>
+        <td>pune</td>
+        <td>thane</td>
+        <td>nagar</td>
+    </tr>
+</table>
+<br>
+<br>
+<div style="background-color: burlywood;">
+<h1> LIST</h1>
+<h3 style="color:blueviolet"> DRINKS</h3>
+<ul>
+    <li>coffee</li>
+    <li>tea</li>
+    <li>cold</li>
+</ul>
+
+<dl>
+    <dt>coffee</dt>
+    <dd>-black and hot</dd>
+
+    <dt>tea</dt>
+    <dd>-milk and hot</dd>
+</dl>
+</div>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">click to get time and date</button>
+
+<p id="id1">a paragraph</p>
+<p id="demo"></p>
+<button type="button" onclick="myfunc()">try</button>
+</body>
+</html>
